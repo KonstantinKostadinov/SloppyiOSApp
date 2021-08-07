@@ -19,6 +19,13 @@
 		E5B6DDCD26BF13AF00B89E5D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E5B6DDCC26BF13AF00B89E5D /* RealmSwift */; };
 		E5B6DDCF26BF13AF00B89E5D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E5B6DDCE26BF13AF00B89E5D /* Realm */; };
 		E5B6DDD226BF143000B89E5D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E5B6DDD126BF143000B89E5D /* Alamofire */; };
+		E5B6DDD526BF15F500B89E5D /* StoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDD426BF15F500B89E5D /* StoryboardExtensions.swift */; };
+		E5B6DDD726BF17B500B89E5D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDD626BF17B500B89E5D /* UIViewExtensions.swift */; };
+		E5B6DDDC26BF18A300B89E5D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDDB26BF18A300B89E5D /* Validator.swift */; };
+		E5B6DDDE26BF190A00B89E5D /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDDD26BF190A00B89E5D /* UITextFieldExtensions.swift */; };
+		E5B6DDE026BF198F00B89E5D /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDDF26BF198F00B89E5D /* UIApplicationExtensions.swift */; };
+		E5B6DDE226BF213200B89E5D /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDE126BF213200B89E5D /* DateExtensions.swift */; };
+		E5B6DDE426BF214E00B89E5D /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDE326BF214E00B89E5D /* BundleExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		E5B6DDB626BF114200B89E5D /* SloppyiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SloppyiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B6DDBA26BF114200B89E5D /* SloppyiOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SloppyiOSAppUITests.swift; sourceTree = "<group>"; };
 		E5B6DDBC26BF114200B89E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5B6DDD426BF15F500B89E5D /* StoryboardExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtensions.swift; sourceTree = "<group>"; };
+		E5B6DDD626BF17B500B89E5D /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		E5B6DDDB26BF18A300B89E5D /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		E5B6DDDD26BF190A00B89E5D /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
+		E5B6DDDF26BF198F00B89E5D /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
+		E5B6DDE126BF213200B89E5D /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		E5B6DDE326BF214E00B89E5D /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +121,11 @@
 		E5B6DD9726BF114000B89E5D /* SloppyiOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				E5B6DDDA26BF189800B89E5D /* Helpers */,
 				E5B6DD9826BF114000B89E5D /* AppDelegate.swift */,
 				E5B6DD9A26BF114000B89E5D /* SceneDelegate.swift */,
 				E5B6DD9C26BF114000B89E5D /* ViewController.swift */,
+				E5B6DDD326BF15BF00B89E5D /* Extensions */,
 				E5B6DD9E26BF114000B89E5D /* Main.storyboard */,
 				E5B6DDA126BF114200B89E5D /* Assets.xcassets */,
 				E5B6DDA326BF114200B89E5D /* LaunchScreen.storyboard */,
@@ -134,6 +150,27 @@
 				E5B6DDBC26BF114200B89E5D /* Info.plist */,
 			);
 			path = SloppyiOSAppUITests;
+			sourceTree = "<group>";
+		};
+		E5B6DDD326BF15BF00B89E5D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E5B6DDD426BF15F500B89E5D /* StoryboardExtensions.swift */,
+				E5B6DDD626BF17B500B89E5D /* UIViewExtensions.swift */,
+				E5B6DDDD26BF190A00B89E5D /* UITextFieldExtensions.swift */,
+				E5B6DDDF26BF198F00B89E5D /* UIApplicationExtensions.swift */,
+				E5B6DDE126BF213200B89E5D /* DateExtensions.swift */,
+				E5B6DDE326BF214E00B89E5D /* BundleExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E5B6DDDA26BF189800B89E5D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E5B6DDDB26BF18A300B89E5D /* Validator.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,8 +315,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5B6DD9D26BF114000B89E5D /* ViewController.swift in Sources */,
+				E5B6DDD726BF17B500B89E5D /* UIViewExtensions.swift in Sources */,
+				E5B6DDE026BF198F00B89E5D /* UIApplicationExtensions.swift in Sources */,
 				E5B6DD9926BF114000B89E5D /* AppDelegate.swift in Sources */,
+				E5B6DDD526BF15F500B89E5D /* StoryboardExtensions.swift in Sources */,
+				E5B6DDE226BF213200B89E5D /* DateExtensions.swift in Sources */,
+				E5B6DDDC26BF18A300B89E5D /* Validator.swift in Sources */,
+				E5B6DDDE26BF190A00B89E5D /* UITextFieldExtensions.swift in Sources */,
 				E5B6DD9B26BF114000B89E5D /* SceneDelegate.swift in Sources */,
+				E5B6DDE426BF214E00B89E5D /* BundleExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
