@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,10 @@
 		E5B6DDA526BF114200B89E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5B6DDA326BF114200B89E5D /* LaunchScreen.storyboard */; };
 		E5B6DDB026BF114200B89E5D /* SloppyiOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDAF26BF114200B89E5D /* SloppyiOSAppTests.swift */; };
 		E5B6DDBB26BF114200B89E5D /* SloppyiOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDBA26BF114200B89E5D /* SloppyiOSAppUITests.swift */; };
+		E5B6DDCA26BF130700B89E5D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E5B6DDC926BF130700B89E5D /* Lottie */; };
+		E5B6DDCD26BF13AF00B89E5D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E5B6DDCC26BF13AF00B89E5D /* RealmSwift */; };
+		E5B6DDCF26BF13AF00B89E5D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E5B6DDCE26BF13AF00B89E5D /* Realm */; };
+		E5B6DDD226BF143000B89E5D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E5B6DDD126BF143000B89E5D /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B6DDCF26BF13AF00B89E5D /* Realm in Frameworks */,
+				E5B6DDD226BF143000B89E5D /* Alamofire in Frameworks */,
+				E5B6DDCD26BF13AF00B89E5D /* RealmSwift in Frameworks */,
+				E5B6DDCA26BF130700B89E5D /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +152,12 @@
 			dependencies = (
 			);
 			name = SloppyiOSApp;
+			packageProductDependencies = (
+				E5B6DDC926BF130700B89E5D /* Lottie */,
+				E5B6DDCC26BF13AF00B89E5D /* RealmSwift */,
+				E5B6DDCE26BF13AF00B89E5D /* Realm */,
+				E5B6DDD126BF143000B89E5D /* Alamofire */,
+			);
 			productName = SloppyiOSApp;
 			productReference = E5B6DD9526BF114000B89E5D /* SloppyiOSApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,11 @@
 				Base,
 			);
 			mainGroup = E5B6DD8C26BF114000B89E5D;
+			packageReferences = (
+				E5B6DDC826BF130700B89E5D /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				E5B6DDCB26BF13AF00B89E5D /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				E5B6DDD026BF143000B89E5D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = E5B6DD9626BF114000B89E5D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -593,6 +612,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E5B6DDC826BF130700B89E5D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E5B6DDCB26BF13AF00B89E5D /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.12.0;
+			};
+		};
+		E5B6DDD026BF143000B89E5D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E5B6DDC926BF130700B89E5D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5B6DDC826BF130700B89E5D /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		E5B6DDCC26BF13AF00B89E5D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5B6DDCB26BF13AF00B89E5D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		E5B6DDCE26BF13AF00B89E5D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5B6DDCB26BF13AF00B89E5D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		E5B6DDD126BF143000B89E5D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5B6DDD026BF143000B89E5D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5B6DD8D26BF114000B89E5D /* Project object */;
 }
