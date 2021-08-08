@@ -26,6 +26,7 @@
 		E5B6DDE026BF198F00B89E5D /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDDF26BF198F00B89E5D /* UIApplicationExtensions.swift */; };
 		E5B6DDE226BF213200B89E5D /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDE126BF213200B89E5D /* DateExtensions.swift */; };
 		E5B6DDE426BF214E00B89E5D /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDE326BF214E00B89E5D /* BundleExtensions.swift */; };
+		E5B6DDE726BF603E00B89E5D /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDE626BF603E00B89E5D /* RequestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		E5B6DDDF26BF198F00B89E5D /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		E5B6DDE126BF213200B89E5D /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		E5B6DDE326BF214E00B89E5D /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
+		E5B6DDE626BF603E00B89E5D /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +123,11 @@
 		E5B6DD9726BF114000B89E5D /* SloppyiOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				E5B6DDDA26BF189800B89E5D /* Helpers */,
 				E5B6DD9826BF114000B89E5D /* AppDelegate.swift */,
 				E5B6DD9A26BF114000B89E5D /* SceneDelegate.swift */,
 				E5B6DD9C26BF114000B89E5D /* ViewController.swift */,
+				E5B6DDE526BF602A00B89E5D /* Managers */,
+				E5B6DDDA26BF189800B89E5D /* Helpers */,
 				E5B6DDD326BF15BF00B89E5D /* Extensions */,
 				E5B6DD9E26BF114000B89E5D /* Main.storyboard */,
 				E5B6DDA126BF114200B89E5D /* Assets.xcassets */,
@@ -171,6 +174,14 @@
 				E5B6DDDB26BF18A300B89E5D /* Validator.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E5B6DDE526BF602A00B89E5D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E5B6DDE626BF603E00B89E5D /* RequestManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +332,7 @@
 				E5B6DDD526BF15F500B89E5D /* StoryboardExtensions.swift in Sources */,
 				E5B6DDE226BF213200B89E5D /* DateExtensions.swift in Sources */,
 				E5B6DDDC26BF18A300B89E5D /* Validator.swift in Sources */,
+				E5B6DDE726BF603E00B89E5D /* RequestManager.swift in Sources */,
 				E5B6DDDE26BF190A00B89E5D /* UITextFieldExtensions.swift in Sources */,
 				E5B6DD9B26BF114000B89E5D /* SceneDelegate.swift in Sources */,
 				E5B6DDE426BF214E00B89E5D /* BundleExtensions.swift in Sources */,
