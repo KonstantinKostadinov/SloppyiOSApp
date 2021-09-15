@@ -104,7 +104,7 @@ extension ChooseMainPlantViewController: UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let selectedPlant = allPlants[indexPath.row]
-        let alert = UIAlertController(title: "Please enter your friend's email", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Please enter name for your plant and time interval for it's watering", message: nil, preferredStyle: .alert)
         alert.addTextField { (nameTextField) in
             nameTextField.placeholder = "Name"
             nameTextField.keyboardType = .default
