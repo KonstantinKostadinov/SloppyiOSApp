@@ -12,4 +12,12 @@ extension UIStoryboard {
     static var main: UIStoryboard {
         return UIStoryboard(name: "Main", bundle: nil)
     }
+
+    static var onboarding: UIStoryboard {
+        return UIStoryboard(name: "Onboarding", bundle: nil)
+    }
+
+    static var plant: UIStoryboard {
+        return UIStoryboard(name: "Plant", bundle: nil)
+    }
 }

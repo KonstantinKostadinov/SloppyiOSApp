@@ -7,9 +7,42 @@
 
 import Foundation
 import UIKit
+import JGProgressHUD
 
 //IB Inspectable extensions
 extension UIView {
+    func showProgressHUD() {
+        JGProgressHUD().show(in: self)
+    }
+
+    func dismissProgressHUD() {
+        for progressHuds in self.subviews where progressHuds is JGProgressHUD {
+            (progressHuds as? JGProgressHUD)?.dismiss()
+        }
+    }
+
+    func showError(error: String?) {
+        self.dismissProgressHUD()
+        let hud = JGProgressHUD()
+        hud.textLabel.text = error
+        hud.indicatorView = JGProgressHUDErrorIndicatorView()
+        hud.show(in: self)
+        hud.dismiss(afterDelay: 3.0)
+    }
+
+    func showMessage(message: String?, delay: Double = 3.0, onDismiss: (() -> Void)? = nil) {
+        self.dismissProgressHUD()
+        let hud = JGProgressHUD()
+        hud.textLabel.text = message
+        hud.indicatorView = JGProgressHUDSuccessIndicatorView()
+        hud.show(in: self)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            hud.dismiss()
+            onDismiss?()
+        }
+    }
+
     @IBInspectable
     var cornerRadius: CGFloat {
         get {
