@@ -30,6 +30,7 @@ class MyPlantsViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         fetchData()
+        NotificationManager.shared.requestNotificationAuthorization()
         // Do any additional setup after loading the view.
     }
 
@@ -77,6 +78,7 @@ class MyPlantsViewController: UIViewController {
                     self.view.showError(error: error.localizedDescription)
                 } else {
                     self.view.showMessage(message: "Success +1")
+                    NotificationManager.shared.createPushNotificationWithTime(flowerName: self.plants[indexPath.row].name, dateInterval: self.plants[indexPath.row].daysToWater)
                 }
             }
         }

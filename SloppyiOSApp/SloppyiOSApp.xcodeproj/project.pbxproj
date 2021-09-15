@@ -52,6 +52,7 @@
 		E5B6DDF326C081E200B89E5D /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5B6DDF226C081E200B89E5D /* Onboarding.storyboard */; };
 		E5B6DDF526C0821500B89E5D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDF426C0821500B89E5D /* LoginViewController.swift */; };
 		E5B6DDF726C08DE000B89E5D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDF626C08DE000B89E5D /* RegisterViewController.swift */; };
+		E5FA6BC726F2194100A01F3E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FA6BC626F2194100A01F3E /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		E5B6DDF226C081E200B89E5D /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		E5B6DDF426C0821500B89E5D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E5B6DDF626C08DE000B89E5D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E5FA6BC626F2194100A01F3E /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 				E5B6DDE626BF603E00B89E5D /* RequestManager.swift */,
 				E5B6DDF026C07FC100B89E5D /* UserDefaultsData.swift */,
 				E524B1F626E02853009084C1 /* LocalDataManager.swift */,
+				E5FA6BC626F2194100A01F3E /* NotificationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				E5B6DDEF26C07F7F00B89E5D /* UIViewControllerExtensions.swift in Sources */,
 				E5A8074626E2E04C0079DAB5 /* OverlayView.swift in Sources */,
 				E5B6DDF726C08DE000B89E5D /* RegisterViewController.swift in Sources */,
+				E5FA6BC726F2194100A01F3E /* NotificationManager.swift in Sources */,
 				E524B1F126E013F7009084C1 /* Plant.swift in Sources */,
 				E5B6DDD526BF15F500B89E5D /* StoryboardExtensions.swift in Sources */,
 				E524B1F326E018BA009084C1 /* MainPlant.swift in Sources */,

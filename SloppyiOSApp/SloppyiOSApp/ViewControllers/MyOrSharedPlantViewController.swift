@@ -54,7 +54,6 @@ class MyOrSharedPlantViewController: OverlayView {
 
             }
         }
-        wateringDaysLabel.text = "Last time watered: Today"//\(plant.lastTimeWatered) interval"
     }
 
     override func viewWillLayoutSubviews() {
@@ -105,22 +104,16 @@ class MyOrSharedPlantViewController: OverlayView {
             realm.add(plant, update: .all)
         }
 
-        RequestManager.waterPlant(plantId: plant.id) { (success, error) in
+        RequestManager.waterPlant(plantId: plant.id) {[weak self] (success, error) in
             if let error = error {
-                self.view.showError(error: error.localizedDescription)
+                self?.view.showError(error: error.localizedDescription)
             } else {
-                self.view.showMessage(message: "Success +1")
+                self?.view.showMessage(message: "Success +1")
+                NotificationManager.shared.createPushNotificationWithTime(flowerName: self?.plant.name ?? "", dateInterval: self?.plant.daysToWater ?? 1)
+                DispatchQueue.main.async {
+                    self?.setupViews()
+                }
             }
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
