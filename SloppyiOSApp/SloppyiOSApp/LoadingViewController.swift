@@ -30,14 +30,14 @@ class LoadingViewController: UIViewController {
     
     private func checkIfUserIsLoggedIn() {
         if UserDefaultsData.isUserLoggedIn {
-            RequestManager.fetchMainPlants()
-            RequestManager.fetchOwnedAndSharedPlaintIds()
-            RequestManager.fetchOwnedAndSharedPlaints { success, error in
-                print(success, error)
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+//            RequestManager.fetchMainPlants()
+//            RequestManager.fetchOwnedAndSharedPlaintIds()
+//            RequestManager.fetchOwnedAndSharedPlaints { success, error in
+//                print(success, error)
+//            }
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                 self.performSegue(withIdentifier: "toMainAppScreen", sender: nil)
-            }
+//            }
         } else {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                 self.dismissHUD(isAnimated: true)

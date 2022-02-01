@@ -36,9 +36,9 @@ class MyPlantsViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        RequestManager.fetchOwnedAndSharedPlaintIds { [self] _, _ in
-            fetchData()
-        }
+//        RequestManager.fetchOwnedAndSharedPlaintIds { [self] _, _ in
+//            fetchData()
+//        }
     }
 
     private func setupView() {
@@ -73,14 +73,14 @@ class MyPlantsViewController: UIViewController {
 
     func waterMeAction(at indexPath: IndexPath) -> UIContextualAction {
         let action = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completion) in
-            RequestManager.waterPlant(plantId: self.plants[indexPath.row].id) { (success, error) in
-                if let error = error {
-                    self.view.showError(error: error.localizedDescription)
-                } else {
-                    self.view.showMessage(message: "Success +1")
-                    NotificationManager.shared.createPushNotificationWithTime(flowerName: self.plants[indexPath.row].name, dateInterval: self.plants[indexPath.row].daysToWater)
-                }
-            }
+//            RequestManager.waterPlant(plantId: self.plants[indexPath.row].id) { (success, error) in
+//                if let error = error {
+//                    self.view.showError(error: error.localizedDescription)
+//                } else {
+//                    self.view.showMessage(message: "Success +1")
+//                    NotificationManager.shared.createPushNotificationWithTime(flowerName: self.plants[indexPath.row].name, dateInterval: self.plants[indexPath.row].daysToWater)
+//                }
+//            }
         }
         
         action.image = UIImage(named: "water_refresh")

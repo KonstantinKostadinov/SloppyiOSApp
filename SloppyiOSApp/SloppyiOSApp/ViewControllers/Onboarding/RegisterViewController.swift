@@ -61,13 +61,22 @@ class RegisterViewController: UIViewController {
         }
 
         let credentials: [String:String] = ["email" : email,
-                                            "password" : password,
-                                            "confirmPassword" : confirmPassword]
+                                            "password" : password]
+        let loginCredentials: [String:String] = ["userMail" : email,
+                                               "userPass" : password]
         RequestManager.register(credentials: credentials) { (success, error) in
             if let error = error {
                 self.view.showError(error: error.localizedDescription)
             } else {
-                self.performSegue(withIdentifier: "fromRegisterToPlantScreenSegue", sender: nil)
+                RequestManager.login(credentials: loginCredentials) { success, error in
+                    if let error = error {
+                        self.view.showError(error: error.localizedDescription)
+                    } else {
+                        DispatchQueue.main.async {
+                            self.performSegue(withIdentifier: "fromRegisterToPlantScreenSegue", sender: nil)
+                        }
+                    }
+                }
             }
         }
     }

@@ -28,6 +28,16 @@ class UserDefaultsData {
         }
     }
 
+    static var userPassword: String {
+        get {
+            UserDefaults.standard.string(forKey: "userPassword") ?? ""
+        }
+        set {
+            UserDefaults.standard.setValue(newValue, forKey: "userPassword")
+            UserDefaults.standard.synchronize()
+        }
+    }
+
     static var token: String {
         get {
             UserDefaults.standard.string(forKey: "token") ?? ""

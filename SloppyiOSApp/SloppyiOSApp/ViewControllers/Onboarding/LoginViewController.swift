@@ -57,16 +57,16 @@ class LoginViewController: UIViewController {
 //            return
 //        }
         guard let password = self.passwordTextField.text else { return}
-        let credentials: [String:String] = ["email" : email,
-                           "password" : password]
+        let credentials: [String:String] = ["userEmail" : email,
+                           "userPass" : password]
 
         RequestManager.login(credentials: credentials) { (success, error) in
             if let error = error {
                 print(error.localizedDescription)
             } else {
-                RequestManager.fetchOwnedAndSharedPlaintIds()
-                RequestManager.fetchOwnedAndSharedPlaints()
-                RequestManager.fetchMainPlants()
+//                RequestManager.fetchOwnedAndSharedPlaintIds()
+//                RequestManager.fetchOwnedAndSharedPlaints()
+//                RequestManager.fetchMainPlants()
                 self.performSegue(withIdentifier: "fromLoginToPlantScreenSegue", sender: nil)
             }
         }

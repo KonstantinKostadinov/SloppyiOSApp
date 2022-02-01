@@ -128,16 +128,16 @@ extension ChooseMainPlantViewController: UITableViewDelegate, UITableViewDataSou
                                             "parentId" : self.user.userID
             ]
             
-            RequestManager.sendNewPlantInformation(dictionary: dictionary) { success, error in
-                print(success, error)
-                self.view.showMessage(message: "Success")
-                RequestManager.fetchOwnedAndSharedPlaintIds()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                    self.view.dismissProgressHUD()
-                    self.navigationController?.popViewController(animated: true)
-                }
-            }
-            
+//            RequestManager.sendNewPlantInformation(dictionary: dictionary) { success, error in
+//                print(success, error)
+//                self.view.showMessage(message: "Success")
+//                RequestManager.fetchOwnedAndSharedPlaintIds()
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+//                    self.view.dismissProgressHUD()
+//                    self.navigationController?.popViewController(animated: true)
+//                }
+//            }
+//            
             
         }
 

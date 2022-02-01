@@ -9,14 +9,14 @@ import Foundation
 import RealmSwift
 
 class User: Object {
-    @objc dynamic var userID: String = ""
+    @objc dynamic var userID: Int = 0
     @objc dynamic var email: String = ""
     var plantIds: List<String> = List<String>()
     var sharedPlantsIds: List<String> = List<String>()
 
     override init() {}
     
-    init(userID: String, email: String, plantIds: [String], sharedPlantIds: [String]) {
+    init(userID: Int, email: String, plantIds: [String], sharedPlantIds: [String]) {
         super.init()
         self.userID = userID
         self.email = email

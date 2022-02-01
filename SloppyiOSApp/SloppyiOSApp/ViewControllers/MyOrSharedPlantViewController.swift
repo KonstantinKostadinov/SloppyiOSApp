@@ -71,13 +71,13 @@ class MyOrSharedPlantViewController: OverlayView {
             print("userEmail", email)
             let dictionary = ["email" : email,
                               "plantId" : self.plant.id]
-            RequestManager.sharePlantViaEmail(dictionary: dictionary) { (message, error) in
-                if let error = error {
-                    self.view.showError(error: error.localizedDescription)
-                } else {
-                    self.view.showMessage(message: message)
-                }
-            }
+//            RequestManager.sharePlantViaEmail(dictionary: dictionary) { (message, error) in
+//                if let error = error {
+//                    self.view.showError(error: error.localizedDescription)
+//                } else {
+//                    self.view.showMessage(message: message)
+//                }
+//            }
         }
 
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { (_) in }
@@ -104,16 +104,16 @@ class MyOrSharedPlantViewController: OverlayView {
             realm.add(plant, update: .all)
         }
 
-        RequestManager.waterPlant(plantId: plant.id) {[weak self] (success, error) in
-            if let error = error {
-                self?.view.showError(error: error.localizedDescription)
-            } else {
-                self?.view.showMessage(message: "Success +1")
-                NotificationManager.shared.createPushNotificationWithTime(flowerName: self?.plant.name ?? "", dateInterval: self?.plant.daysToWater ?? 1)
-                DispatchQueue.main.async {
-                    self?.setupViews()
-                }
-            }
-        }
+//        RequestManager.waterPlant(plantId: plant.id) {[weak self] (success, error) in
+//            if let error = error {
+//                self?.view.showError(error: error.localizedDescription)
+//            } else {
+//                self?.view.showMessage(message: "Success +1")
+//                NotificationManager.shared.createPushNotificationWithTime(flowerName: self?.plant.name ?? "", dateInterval: self?.plant.daysToWater ?? 1)
+//                DispatchQueue.main.async {
+//                    self?.setupViews()
+//                }
+//            }
+//        }
     }
 }

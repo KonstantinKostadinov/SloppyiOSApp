@@ -52,6 +52,7 @@
 		E5B6DDF326C081E200B89E5D /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5B6DDF226C081E200B89E5D /* Onboarding.storyboard */; };
 		E5B6DDF526C0821500B89E5D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDF426C0821500B89E5D /* LoginViewController.swift */; };
 		E5B6DDF726C08DE000B89E5D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6DDF626C08DE000B89E5D /* RegisterViewController.swift */; };
+		E5F46C7127A9EF09006C5624 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F46C7027A9EF09006C5624 /* API.swift */; };
 		E5FA6BC726F2194100A01F3E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FA6BC626F2194100A01F3E /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +119,7 @@
 		E5B6DDF226C081E200B89E5D /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		E5B6DDF426C0821500B89E5D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E5B6DDF626C08DE000B89E5D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E5F46C7027A9EF09006C5624 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E5FA6BC626F2194100A01F3E /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				E5B6DDDB26BF18A300B89E5D /* Validator.swift */,
+				E5F46C7027A9EF09006C5624 /* API.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				E5B6DDF126C07FC100B89E5D /* UserDefaultsData.swift in Sources */,
 				E524B1F726E02853009084C1 /* LocalDataManager.swift in Sources */,
 				E524B1F526E01E4A009084C1 /* MyPlantsViewController.swift in Sources */,
+				E5F46C7127A9EF09006C5624 /* API.swift in Sources */,
 				E5B6DDDC26BF18A300B89E5D /* Validator.swift in Sources */,
 				E58D49E626ECED4D00762440 /* SettingsViewController.swift in Sources */,
 				E5B6DDE726BF603E00B89E5D /* RequestManager.swift in Sources */,
