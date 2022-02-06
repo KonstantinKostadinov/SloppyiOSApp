@@ -35,9 +35,9 @@ class LoadingViewController: UIViewController {
 //            RequestManager.fetchOwnedAndSharedPlaints { success, error in
 //                print(success, error)
 //            }
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+          DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                 self.performSegue(withIdentifier: "toMainAppScreen", sender: nil)
-//            }
+           }
         } else {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                 self.dismissHUD(isAnimated: true)

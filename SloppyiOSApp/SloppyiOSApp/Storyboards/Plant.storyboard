@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19158" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vfq-sT-r0K">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vfq-sT-r0K">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19141"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5D0-NH-Ygk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1831.8840579710147" y="-816.29464285714278"/>
+            <point key="canvasLocation" x="2677" y="-970"/>
         </scene>
         <!--My Plants View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -174,7 +174,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ae7-YA-AXb">
-                        <barButtonItem key="rightBarButtonItem" title="add" id="bfe-St-szr">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="bfe-St-szr">
                             <connections>
                                 <action selector="didTapAddPlant:" destination="Y6W-OH-hqX" id="9Qh-Kq-8rn"/>
                             </connections>
@@ -627,11 +627,12 @@
         <image name="icons8-tree_planting" width="33.333332061767578" height="33.333332061767578"/>
         <image name="icons8-tree_planting_filled" width="33.333332061767578" height="33.333332061767578"/>
         <image name="plant_icon" width="69.333335876464844" height="70.666664123535156"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="accentColor">
             <color red="0.50199997425079346" green="0.9100000262260437" blue="0.41600000858306885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="mainBackgroundColor">
-            <color red="0.90200001001358032" green="0.90200001001358032" blue="0.90200001001358032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94099998474121094" green="0.94099998474121094" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
